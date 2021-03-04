@@ -19,7 +19,7 @@ mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true})
 
 const db = mongoose.connection
 db.on('error',(err)=>{
-    console.error("connection error;", err);
+    console.error("connection error please do check;", err);
 });
 db.once('open', () => console.log('connected to mongoose'))
 
